@@ -7,7 +7,7 @@ object App {
 
     val data = sc.parallelize(1 to 100)
     val sum = data.reduce(_ + _)
-    println(s"Result: $sum")
+    println(s"Result: \$sum")
 
     spark.stop()
   }
